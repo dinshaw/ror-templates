@@ -97,7 +97,7 @@ ActionController::Base.session_store = :active_record_store
 END
 
 # freeze rails
-freeze!
+freeze! if yes?("Freeze Rails?")
 capify!
 
 # Commit all work so far to the repository
