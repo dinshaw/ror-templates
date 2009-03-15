@@ -75,7 +75,7 @@ in_root do
 end
 
 # Set up sessions, RSpec, user model, OpenID, etc, and run migrations
-generate("authenticated", "user sessions")
+generate("authenticated", "user sessions --aasm --include_activation --rspec")
 generate("roles", "Role User")
 generate("rspec")
 
